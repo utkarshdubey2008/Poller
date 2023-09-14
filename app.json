@@ -1,0 +1,27 @@
+{
+  "name": "your-bot-name",
+  "description": "Description of your bot",
+  "repository": "https://github.com/your-username/your-repo",
+  "keywords": ["telegram", "bot"],
+  "success_url": "/",
+  "env": {
+    "TOKEN": {
+      "description": "Telegram bot token",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API hash",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "stack": "container"
+}
